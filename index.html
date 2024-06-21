@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clone Disney+</title>
+    <title>Clone Doramalândia</title>
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 
@@ -12,11 +12,11 @@
     <header class="header">
         <div class="header__container">
             <h1>
-                <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+                <img class="header__logo" src="./dist/images/logos/doramalandia_logo.svg" alt="Doramalândia">
             </h1>
             <ul class="header__links">
                 <li class="header__links__item">
-                    <a href="#" class="button button--secondary">Assine agora</a>
+                    <a href="#" class="button button--secondary">Assista agora</a>
                 </li>
                 <li class="header__links__item">
                     <a href="#" class="button button--dark">Entrar</a>
@@ -26,34 +26,20 @@
     </header>
     <section class="hero">
         <div class="hero__content">
-            <div class="hero__content__branding">
-                <img src="./dist/images/disneyplus.svg" alt="Disney+">
+            <h3 class="title--small">Os melhores doramas você encontra aqui.</h3>
+            <button class="button">Assista Agora</button>
+        </div>
+    </section>
+    <section class="banner">
+        <div class="banner__container">
+            <div class="banner__faixa">
+                <img src="./dist/images/logos/doramalandia_logo.svg" alt="">
+                <div class="banner__content">
+                    <h2 class="title--small">Os doramas que você ama</h2>
+                    <p class="text">Estão todos aqui</p>
+                    <a class="text" href="#">Saiba mais</a>
+                </div>
             </div>
-            <h3 class="title--small">
-                As melhores histórias em um só lugar.
-            </h3>
-            <p>
-                <a href="#" class="link-text">Assinar o Disney+</a>
-                <br>
-                <span class="text">
-                    R$ 27,90/mês ou R$ 279,90/ano à vista*
-                </span>
-            </p>
-            <ul class="hero__content__combos">
-                <li class="hero__content__combos__combo">
-                    <img src="./dist/images/logos/disney_star_plus.png" alt="">
-                    <button class="button">Assine Agora</button>
-                    <span class="text">R$45,90/mês*</span>
-                </li>
-                <li class="hero__content__combos__combo">
-                    <img src="./dist/images/logos/disney_star_plus_starzplay.png" alt="">
-                    <button class="button">Assine Agora</button>
-                    <span class="text"> R$55,90/mês*</span>
-                </li>
-            </ul>
-            <p class="text--small">
-                *O preço pode variar caso a assinatura seja feita através de outras plataformas
-            </p>
         </div>
     </section>
     <section class="shows">
@@ -61,103 +47,52 @@
             <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">
                 Em breve
             </button>
-            <button data-tab-button="populares" class="shows__tabs__button">
-                Mais populares
-            </button>
             <button data-tab-button="star_plus" class="shows__tabs__button">
-                Mais no Star+
+                Mais Populares
             </button>
         </nav>
         <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/desencantada.jpg" alt="Desencantada">
+                <img src="./dist/images/em_breve/loucos_um_pelo_outro.jpg" alt="Loucos um pelo outro">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/willow.jpg" alt="Willow">
+                <img src="./dist/images/em_breve/love_to_hate_you.jpg" alt="Love to hate to you">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/lobisomem.jpg" alt="Lobisomen">
+                <img src="./dist/images/em_breve/rainha_das_lagrimas.jpg" alt="Rainha das lagrimas">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+                <img src="./dist/images/em_breve/todo_mundo_me_ama.jpg" alt="Todo mundo me ama">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="The Santa Clauses">
+                <img src="./dist/images/em_breve/um_pesadelo_de_casamento.jpg" alt="Um pesadolo de casamento">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/sem_limites.jpg" alt="Sem Limites">
-            </li>
-        </ul>
-        <ul data-tab-id="populares" class="shows__list">
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_populares/red.jpg" alt="Red">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_populares/cavaleira_da_lua.jpg" alt="Cavaleiro da lua">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_populares/obi_wan.jpg" alt="Obi Wan">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_populares/bluey.jpg" alt="Bluey">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_populares/tudo_igual_sqn.jpg" alt="Tudo igual sqn">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_populares/o_incrivel_dr_pol.jpg" alt="O incrível dr pol">
+                <img src="./dist/images/em_breve/uma_familia_inusitada.jpg" alt="Uma familia inusitada">
             </li>
         </ul>
         <ul data-tab-id="star_plus" class="shows__list">
             <li class="shows__list__item">
-                <img src="./dist/images/mais_no_star_plus/libertadores.jpg" alt="Libertadores">
+                <img src="./dist/images/mais_populares/a_love_so_beautyful.jpg" alt="A love so beautyful">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/mais_no_star_plus/os_simpson.jpg" alt="Os Simpsons">
+                <img src="./dist/images/mais_populares/a_mestra_das_pegadinhas.jpg" alt="A mestra das pegadinhas">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/mais_no_star_plus/premier_league.jpg" alt="Premier League">
+                <img src="./dist/images/mais_populares/amor_rural.jpg" alt="Amor rural">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/mais_no_star_plus/the_kardashians.jpg" alt="The Kardashians">
+                <img src="./dist/images/mais_populares/apaixonados_na_cidade.jpg" alt="Apaixonados na cidade">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/mais_no_star_plus/belair.jpg" alt="Belair">
+                <img src="./dist/images/mais_populares/hierarchy.jpg" alt="Hierarchy">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/mais_no_star_plus/nba.jpg" alt="NBA">
+                <img src="./dist/images/mais_populares/medicos_em_colapso.jpg" alt="Médicos em colapso">
             </li>
         </ul>
     </section>
-    <section class="plans">
-        <h2 class="title--big">Escolha seu plano</h2>
-        <ul class="plans__list">
-            <li class="plans__list__item">
-                <img src="./dist/images/logos/disneyplus_underline.png" alt="Disney+">
-                <strong class="title--small">R$ 27,90/mês*</strong>
-                <p class="text--big">No Disney+ você encontra as últimas estreias do cinema, originais e clássicos
-                    inesquecíveis.</p>
-                <button class="button">Assine Agora</button>
-            </li>
-            <li class="plans__list__item">
-                <img src="./dist/images/logos/disney_star_plus_sm.png" alt="Disney+">
-                <strong class="title--small">R$ 45,90/mês*</strong>
-                <p class="text--big">Assine Disney+ e Star+ juntos. Economize e aproveite agora os dois serviços por um
-                    preço único.</p>
-                <button class="button">Assine Agora</button>
-            </li>
-            <li class="plans__list__item">
-                <img src="./dist/images/logos/disney_star_plus_starzplay_underline.png" alt="Disney+">
-                <strong class="title--small">R$ 55,90/mês*</strong>
-                <p class="text--big">Disney+, Star+ e STARZPLAY em um plano especial. Assine agora os três serviços
-                    juntos.</p>
-                <button class="button">Assine Agora</button>
-            </li>
-        </ul>
-        <p class="text--small">
-            *O preço pode variar caso a assinatura seja feita através de outras plataformas.
-        </p>
-    </section>
+
     <section class="image-text-section">
         <img src="./dist/images/tv_pc_tablet_celular.png" alt="Imagem com tv, tablet, computador e celular">
         <div class="image-text-section__text__container">
@@ -169,19 +104,7 @@
             </p>
         </div>
     </section>
-    <section class="image-text-section image-text-section--image-full-width">
-        <picture>
-            <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png">
-            <img src="./dist/images/fundo_rei_leao.png" alt="Imagem com tv, tablet, computador e celular">
-        </picture>
-        <div class="image-text-section__text__container image-text-section--image-full-width__text__container">
-            <h2 class="title">Baixe filmes e séries</h2>
-            <p class="text--big">
-                Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até mesmo sem
-                internet.
-            </p>
-        </div>
-    </section>
+
     <section class="available-devices">
         <h2 class="title">Disponível nos seus dispositivos favoritos</h2>
         <ul class="available-devices__list">
@@ -234,54 +157,24 @@
         <ul class="faq_questions">
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
-                    O que está incluido no Disney+?
+                    O que está incluido no Doramalândia?
                 </div>
                 <div class="faq__questions__item__answer text--big">
-                    <p>Disney+ oferece:</p>
+                    <p>Doramalândia oferece:</p>
                     <ul>
                         <li>Experiência premium sem intervalos comerciais.</li>
-                        <li>As melhores histórias da Disney, Pixar, Marvel, Star Wars e National Geographic, tudo em um
-                            só lugar</li>
                         <li>Groupwatch: assista jumto com amigos o familiares, mesmo separados.</li>
                         <li>Downloads ilimitados em até 10 dispositivos compatíveis.</li>
                         <li>Mais de 300 títulos em 4k UHD e HDR.</li>
                         <li>A possibilidade de assistir em até 4 dispositivos compatíveis simultaneamente sem custo
                             adicional.</li>
                         <li>IMAX Enhanced: disponível para alguns títulos da Marvel em dispositivos compatíveis com o
-                            Disney+.</li>
+                            Doramalândia.</li>
                     </ul>
                 </div>
             </li>
             <li class="faq__questions__item">
-                <div class="faq__questions__item__question" data-faq-question>
-                    Já tem o Disney+ ou o Star+ e quer o Combo+?
-                </div>
-                <div class="faq__questions__item__answer text--big">
-                    <p>Ao assinar o Combo+:</p>
-                    <ul>
-                        <li>O valor da sua assinatura existente será descontado do preço do Combo+.</li>
-                        <li>Se você assina o plano mensal, o valor que você paga mensalmente será descontado do preço do
-                            Combo+.</li>
-                        <li>Se você tem uma assinatura anual do Disney+ cobrada diretamente pelo Disney+, não é possível
-                            mudar para o Combo+ no momento. Entre em contato com o suporte do Disney+ para conhecer suas
-                            opções.</li>
-                        <li>Você vai receber um e-mail com os valores detalhados assim que finalizar o pagamento.</li>
-                        <li>Lembre-se: você pode cancelar a assinatura quando quiser.</li>
-                        <li>A possibilidade de assistir em até 4 dispositivos compatíveis simultaneamente sem custo
-                            adicional.</li>
-                    </ul>
-                    <p>No momento, apenas a assinatura mensal do Combo+ está disponível.</p>
-                </div>
-            </li>
-            <li class="faq__questions__item">
-                <div class="faq__questions__item__question" data-faq-question>
-                    Quais formas de pagamento utilizar?
-                </div>
-                <div class="faq__questions__item__answer text--big">
-                    <p>Você pode utilizar: cartão de débito, cartão de crédito, PayPal, Mercado Pago, e também empresas
-                        parceiras como Google Play Store, App Store da Apple; Mercado Livre e provedores locais de TV,
-                        telefonia e internet.</p>
-                </div>
+
             </li>
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
@@ -289,29 +182,29 @@
                 </div>
                 <div class="faq__questions__item__answer text--big">
                     <p>Para poder acessar o catálogo completo que inclui conteúdo com classificação indicativa até 16 e
-                        18, todos os usuários do Disney+ na América Latina devem atualizar as configurações de controle
+                        18, todos os usuários do Doramalândia na América Latina devem atualizar as configurações de
+                        controle
                         parental do perfil. É possível restringir o conteúdo de cada perfil e também adicionar um PIN de
                         bloqueio. Os usuários que preferirem manter a configuração atual vão continuar aproveitando o
-                        Disney+ com a classificação indicativa até 14, podendo alterá-la a qualquer momento em "Editar
+                        Doramalândia com a classificação indicativa até 14, podendo alterá-la a qualquer momento em
+                        "Editar
                         Perfis".</p>
                 </div>
             </li>
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
-                    Onde posso assistir ao Disney+?
+                    Onde posso assistir ao Doramalândia?
                 </div>
                 <div class="faq__questions__item__answer text--big">
-                    <p>O aplicativo do Disney+ está disponível em dispositivos móveis, navegadores, videogames,
-                        decodificadores e smart TVs. Confira <a
-                            href="https://help.disneyplus.com/article/disneyplus-devices-supported">a lista completa de
-                            dispositivos compatíveis na Central de ajuda.</a></p>
+                    <p>O aplicativo do Doramalândia está disponível em dispositivos móveis, navegadores, videogames,
+                        decodificadores e smart TVs. </p>
                 </div>
             </li>
         </ul>
     </section>
     <footer class="footer">
         <div class="footer__container">
-            <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+            <img class="footer__logo" src="./dist/images/logos/doramalandia_logo.svg" alt="Doramalândia">
             <ul class="footer__links">
                 <li class="footer__links__item">
                     <div class="language-selector">
@@ -328,16 +221,13 @@
                 <li class="footer__links__item"><a href="#" class="text--small">Anúncios personalizados</a></li>
                 <li class="footer__links__item"><a href="#" class="text--small">Dispositivos compatíveis</a></li>
                 <li class="footer__links__item"><a href="#" class="text--small">Ajuda</a></li>
-                <li class="footer__links__item"><a href="#" class="text--small">Sobre o Disney+</a></li>
+                <li class="footer__links__item"><a href="#" class="text--small">Sobre o Doramalândia</a></li>
             </ul>
             <p class="text--small">
-                ® 2024 Disney, Disney+ e The Walt Disney Company. Todos os direitos reservados. Serviço de assinatura
-                paga. Conteúdo sujeito a disponibilidade.
+                ® 2024 Doramalândia. Todos os direitos reservados. Conteúdo sujeito a disponibilidade.
             </p>
             <p class="text--small">
-                Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é
-                comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas,
-                12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
+                Doramalândia é gratuito.
             </p>
         </div>
     </footer>

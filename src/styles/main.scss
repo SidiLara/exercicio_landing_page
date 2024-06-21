@@ -1,21 +1,21 @@
 @use 'variaveis';
 @use 'hero';
 @use 'shows';
-@use 'plans';
+@use 'banner';
 @use 'available-devices';
 @use 'faq';
 @use 'footer';
 @use 'header';
 
 @font-face {
-    font-family: Avenir;
-    src: url(../../assets/fonts/Avenir-Regular.woff2);
+    font-family: NetflixSans-Regular;
+    src: url(../../assets/fonts/NetflixSans-Regular.woff2);
     font-weight: 400;
 }
 
 @font-face {
-    font-family: Avenir;
-    src: url(../../assets/fonts/Avenir-Bold.woff2);
+    font-family: NetflixSans-Bold;
+    src: url(../../assets/fonts/NetflixSans-Bold.woff2);
     font-weight: 700;
 }
 
@@ -23,7 +23,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Avenir, sans-serif;
+    font-family: NetflixSans-Regular, sans-serif;
     list-style-type: none;
 }
 
@@ -113,7 +113,7 @@ body {
     border: 1px solid variaveis.$corDeFundoBotaoPrimario;
 
     &:hover {
-        background-color: lighten(variaveis.$corDeFundoBotaoPrimario, 3%);
+        background-color: lighten(variaveis.$corDeFundoBotaoPrimario, 10%);
     }
 
     &--secondary {
