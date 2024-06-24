@@ -86,6 +86,7 @@ body {
 
     @media (max-width:768px) {
         @include title(24px);
+        text-align: center;
     }
 }
 
@@ -133,56 +134,6 @@ body {
         &:hover {
             background-color: variaveis.$corTextoSecundario;
             color: variaveis.$corDeFundo;
-        }
-    }
-}
-
-.image-text-section {
-    padding: 5.6 vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-
-    @media (max-width: 768px) {
-        display: block;
-    }
-
-    img {
-        max-width: 100%;
-    }
-
-    &__text__container {
-        padding: 0 2vw;
-
-        h2 {
-            margin-bottom: 24px;
-        }
-    }
-
-    &--image-full-width {
-        display: block;
-        position: relative;
-
-        img {
-            width: 100%;
-        }
-
-        &__text__container {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            height: 100%;
-            width: calc(50% - 5.6vw);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            @media (max-width: 768px) {
-                position: relative;
-                display: block;
-                left: 0;
-                width: 100%;
-            }
         }
     }
 }
