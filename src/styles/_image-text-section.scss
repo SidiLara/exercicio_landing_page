@@ -1,0 +1,16 @@
+.image-text-section {
+    padding: 2vw 5.6vw;
+    &__text__container {
+        .title {
+            @media (max-width: 768px) {
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+        p{
+            @media (max-width: 768px){
+                text-align: center;
+            }
+        }
+    }
+}
